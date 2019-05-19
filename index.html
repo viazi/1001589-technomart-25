@@ -11,7 +11,7 @@
       </a>
       <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
         <label class="visually-hidden" for="filter-search">Поиск</label>
-        <input type="search" name="search" placeholder="Поиск:" id="filter-search">
+        <input type="search" name="search" placeholder="Поиск:" id="filter-search" required>
         <button class="button search-button" type="submit">Найти</button>
       </form>
       <ul class="purchase">
@@ -311,18 +311,18 @@
 
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Обратная связь</h2>
-      <form class="write-us-form" method="post" action="#">
+      <form class="write-us-form" method="post" action="https://echo.htmlacademy.ru">
         <p>
           <label for="write-us-name">Ваше имя:</label>
-          <input type="text" name="name" placeholder="Имя Фамилия" id="write-us-name">
+          <input type="text" name="name" placeholder="Имя Фамилия" id="write-us-name" required>
         </p>
         <p>
           <label for="write-us-email">Ваш e-mail:</label>
-          <input type="text" name="email" placeholder="email@example.com" id="write-us-email">
+          <input type="text" name="email" placeholder="email@example.com" id="write-us-email" required>
         </p>
         <p>
           <label for="write-us-text">Текст письма:</label>
-          <textarea class="write-us-field" name="text" id="write-us-text">В свободной форме</textarea>
+          <textarea class="write-us-field" name="text" id="write-us-text" required>В свободной форме</textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>
