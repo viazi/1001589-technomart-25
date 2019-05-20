@@ -57,7 +57,29 @@
       <section class="filters">
         <h2 class="filters-heading">Фильтр:</h2>
         <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
-          <!--Фильтр цен-->
+          <fieldset>
+            <legend>Цена:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="visually-hidden">
+                  От:
+                  <input type="text" name="min-price" value="0">
+                </label>
+                <span class="dash">—</span>
+                <label class="visually-hidden">
+                  До:
+                  <input type="text" name="max-price" value="30000">
+                </label>
+              </div>
+            </div>
+          </fieldset>
           <fieldset>
             <legend>Производители:</legend>
             <ul>
