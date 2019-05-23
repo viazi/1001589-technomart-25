@@ -1,0 +1,564 @@
+body {
+  margin: 0;
+
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.modal {
+  display: none;
+}
+
+.main-header {
+  background-color: #f4f7f9;
+}
+
+.main-header-logo {
+  background-color: #ee3643;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+  background-color: #ca2c37;
+}
+
+.main-header-logo:active {
+  background-color: #ba2732;
+}
+
+.header-top {
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.search-form input {
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  background-color: transparent;
+}
+
+.search-form input:hover {
+  background-color: #212a3a;
+}
+
+.search-form input:focus {
+  background-color: #ffffff;
+}
+
+.purchase {
+  list-style: none;
+}
+
+.purchase a {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.purchase a:hover,
+.purchase a:focus {
+  background-color: #212a3a;
+}
+
+.purchase a:active {
+  background-color: #161d29;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.purchase-filled a {
+  background-color: #ee3643;
+}
+
+.purchase-filled a:hover,
+.purchase-filled a:focus {
+  background-color: #ca2c37;
+}
+
+.purchase-filled a:active {
+  background-color: #ba2732;
+}
+
+.place-order a {
+  background-color: #63a63e;
+}
+
+.place-order a:hover,
+.place-order a:focus {
+  background-color: #5fbb2d;
+}
+
+.place-order a:active {
+  background-color: #518534;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.index-page-title {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.phone {
+  border: 3px solid #ffffff;
+}
+
+.phone a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.authorization {
+  list-style: none;
+}
+
+.authorized {
+  list-style: none;
+}
+
+.user-menu {
+  background-color: #ffffff;
+}
+
+.user-profile a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.user-logout a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+/*.user-profile a:hover,
+.user-profile a:focus,
+.user-logout a:hover,
+.user-logout a:focus {
+}*/
+
+.user-profile a:active,
+.user-logout a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-navigation a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ee3643;
+}
+
+.user-navigation a:active {
+  color: #c5c5c5;
+}
+
+.button {
+  font: inherit;
+
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
+.button-authorization {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.button-authorization:hover,
+.button-authorization:focus {
+  color: #ee3643;
+  background-color: #ffffff;
+}
+
+.button-authorization:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.main-navigation {
+  background-color: #32425c;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #293449;
+}
+
+.site-navigation a:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.about h2,
+.contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about p,
+.contacts p {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.delivery-list {
+  list-style: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.footer-top {
+  background-color: #32425c;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+
+.footer-logo {
+  background-color: #ee3643;
+}
+
+.footer-contacts a {
+  color: #f1f5f7;
+}
+
+.footer-navigation {
+  list-style: none;
+}
+
+.footer-navigation a {
+  color: #f1f5f7;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active {
+  color: rgba(241, 245, 247, 0.5);
+  text-decoration: none;
+}
+
+.sections {
+  list-style: none;
+}
+
+.sections a {
+  color: #ffd180;
+}
+
+.sections a:hover,
+.sections a:focus {
+  text-decoration: underline;
+}
+
+.sections a:active {
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: #293449;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-social {
+  text-align: center;
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff
+}
+
+.footer-feedback a,
+.footer-develop a{
+  color: #ffd180;
+}
+
+.footer-feedback a:hover,
+.footer-feedback a:focus,
+.footer-develop a:hover,
+.footer-develop a:focus {
+  text-decoration: underline;
+}
+
+.footer-feedback a:active,
+.footer-develop a:active {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+/*Страница каталога*/
+
+.inner-page {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.page-title {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+
+  background-color: #f2f6f8;
+}
+
+.filters-heading,
+.sorting-heading {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: #f7f3ec;
+}
+
+.filters-form fieldset {
+  border: none;
+}
+
+.filters-form legend {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filters-form ul {
+  list-style: none;
+
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter-input:hover,
+.filter-input:focus {
+  color: #b5b5b5;
+}
+
+.filter-input:disabled + label {
+  color: #b5b5b5;
+  opacity: 0.5;
+}
+
+.filter-button {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.catalog-item a {
+  color: #000000;
+}
+
+.catalog-item h3,
+.catalog-item-image,
+.catalog-item-price,
+.catalog-item-order {
+  text-align: center;
+}
+
+.catalog-item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.old-price {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.price {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.new-product {
+  color: #ffffff;
+  text-transform: lowercase;
+  background-color: #ee3643;
+}
+
+.catalog-item-order {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-item-order .button-buy {
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
+.button-buy:hover,
+.button-buy:focus {
+  background-color: #5fbb2d;
+}
+
+.button-buy:active {
+  background-color: #518534;
+}
+
+.catalog-item-order .button-bookmarks {
+  color: #32425c;
+  background-color: #ffffff;
+  border: 2px solid #63a63e;
+}
+
+.button-bookmarks:hover,
+.button-bookmarks:focus {
+  border-color: #32425c;
+}
+
+.button-bookmarks:active {
+  color: rgba(50, 66, 92, 0.3);
+  border-color: rgba(50, 66, 92, 0.3);
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  border-color: #bdc6ca;
+}
+
+.pagination-item a:active {
+  border-color: #ee3643;
+}
+
+.pagination-item-current a {
+  color: #ffffff;
+  background-color: #ee3643;
+  border: none;
+}
+
+.description {
+  background-color: #f2f6f8;
+}
+
+.description h2 {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.description p {
+  font-size: 13px;
+  line-height: 24px;
+}
