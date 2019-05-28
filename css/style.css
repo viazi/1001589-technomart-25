@@ -14,6 +14,12 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .button {
   font-size: 14px;
   font-weight: 400;
@@ -60,10 +66,15 @@ a {
 }
 
 .main-header {
+  padding-bottom: 60px;
+
   background-color: #f4f7f9;
 }
 
 .main-header-logo {
+  width: 220px;
+  height: 42px;
+
   background-color: #ee3643;
 }
 
@@ -77,8 +88,19 @@ a {
 }
 
 .header-top {
+  display: flex;
+  margin-bottom: 46px;
+
   background-color: #293449;
   color: #ffffff;
+}
+
+.header-top .container {
+  display: flex;
+}
+
+.search-form {
+  width: 270px;
 }
 
 .search-form input {
@@ -97,7 +119,15 @@ a {
 }
 
 .purchase {
+  margin: 0;
+  padding: 0;
+  width: 450px;
+
   list-style: none;
+}
+
+.purchase li {
+  width: 150px;
 }
 
 .purchase a {
@@ -143,12 +173,24 @@ a {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.header-middle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
 .index-page-title {
+  width: 300px;
+
   font-size: 16px;
   font-style: italic;
   font-weight: normal;
   line-height: 23px;
   color: #ee3643;
+}
+
+.header-contacts {
+  width: 300px;
 }
 
 .phone {
@@ -168,10 +210,18 @@ a {
 }
 
 .authorization {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .authorized {
+  width: 300px;
+  margin: 0px;
+  padding: 0px;
+
   list-style: none;
 }
 
@@ -219,10 +269,15 @@ a {
 }
 
 .main-navigation {
+  display: flex;
+
   background-color: #32425c;
 }
 
 .site-navigation {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -240,6 +295,10 @@ a {
 .site-navigation a:active {
   background-color: #1d2739;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.promo {
+  margin-top: 60px;
 }
 
 .categories {
@@ -344,6 +403,9 @@ a {
 .services h2,
 .about h2,
 .contacts h2 {
+  margin: 0;
+  padding: 0;
+
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -399,6 +461,21 @@ a {
   background-color: #ffffff;
 }
 
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 75px;
+  padding-bottom: 86px;
+}
+
+.about {
+  width: 540px;
+}
+
+.contacts {
+  width: 300px;
+}
+
 .services p,
 .about p,
 .contacts p {
@@ -412,14 +489,32 @@ a {
 }
 
 .footer-top {
+  display: flex;
+
   background-color: #32425c;
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
 }
 
+.footer-top .container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
 .footer-logo {
+  width: 220px;
+  height: 63px;
+  margin-right: 170px;
+
   background-color: #ee3643;
+}
+
+.footer-contacts {
+  margin: 0;
+  margin-right: 20px;
+  width: 380px;
 }
 
 .footer-contacts a {
@@ -427,6 +522,10 @@ a {
 }
 
 .footer-navigation {
+  margin: 0;
+  padding: 0;
+  width: 550px;
+
   list-style: none;
 }
 
@@ -445,6 +544,10 @@ a {
 }
 
 .sections {
+  margin: 0;
+  padding: 0;
+  width: 540px;
+
   list-style: none;
 }
 
@@ -463,19 +566,48 @@ a {
 }
 
 .footer-bottom {
+  display: flex;
+  padding: 40px 0;
+
   background-color: #293449;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 }
 
+.footer-bottom .container {
+  display: flex;
+}
+
+.footer-copyright {
+  margin: 0;
+  margin-right: 140px;
+  width: 240px;
+}
+
 .footer-social {
+  margin: 0;
+  margin-right: 100px;
+  padding: 0;
+  width: 160px;
+
   text-align: center;
   list-style: none;
 }
 
 .social-button {
   color: #ffffff
+}
+
+.footer-feedback {
+  margin: 0;
+  margin-right: 20px;
+  width: 140px;
+}
+
+.footer-develop {
+  margin: 0;
+  width: 140px;
 }
 
 .footer-feedback a,
@@ -502,7 +634,16 @@ a {
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .breadcrumbs {
+  width: 460px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -518,13 +659,27 @@ a {
 }
 
 .page-title {
+  padding-left: 30px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
+  font-weight: 400;
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
 
   background-color: #f2f6f8;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 220px;
 }
 
 .filters-heading,
@@ -583,6 +738,10 @@ a {
 
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
+}
+
+.catalog {
+  width: 700px;
 }
 
 .sorting-type,
@@ -740,12 +899,16 @@ a {
 }
 
 .description {
+  margin: 0;
+  padding-top: 65px;
+  padding-bottom: 70px;
   background-color: #f2f6f8;
 }
 
 .description h2 {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
+  font-weight: 400;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
