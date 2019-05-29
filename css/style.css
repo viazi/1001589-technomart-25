@@ -746,6 +746,9 @@ a {
 
 .sorting-type,
 .sorting-order {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -785,10 +788,19 @@ a {
 .sorting-order-active*/
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .catalog-item {
+  width: 220px;
+  margin-bottom: 20px;
+
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
 }
