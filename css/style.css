@@ -388,7 +388,21 @@ a {
 
 .popular-products-list,
 .popular-brands-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.popular-products-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.popular-products-list .catalog-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .popular-brand-item:hover,
@@ -790,7 +804,6 @@ a {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -799,10 +812,16 @@ a {
 
 .catalog-item {
   width: 220px;
+  margin-right: 20px;
   margin-bottom: 20px;
+  box-sizing: border-box;
 
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
+}
+
+.catalog-list .catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover,
@@ -822,6 +841,7 @@ a {
 }
 
 .catalog-item h3 {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
