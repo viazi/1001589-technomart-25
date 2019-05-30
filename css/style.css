@@ -396,13 +396,14 @@ a {
 
 .popular-products-list {
   display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
-.popular-products-list .catalog-item:nth-child(4n) {
-  margin-right: 0;
+.popular-products-list .catalog-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
 }
 
 .popular-brand-item:hover,
@@ -803,25 +804,26 @@ a {
 
 .catalog-list {
   display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
+.catalog-list .catalog-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+}
+
 .catalog-item {
   width: 220px;
-  margin-right: 20px;
+  margin-left: 20px;
   margin-bottom: 20px;
   box-sizing: border-box;
 
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
-}
-
-.catalog-list .catalog-item:nth-child(3n) {
-  margin-right: 0;
 }
 
 .catalog-item:hover,
