@@ -386,24 +386,21 @@ a {
   background-color: #f9f5f0;
 }
 
-.popular-products-list,
-.popular-brands-list {
+.popular-products-list {
+  display: flex;
+  flex-wrap:wrap;
   margin: 0;
+  margin-left: -20px;
   padding: 0;
 
   list-style: none;
 }
 
-.popular-products-list {
-  display: flex;
+.popular-brands-list {
   margin: 0;
   padding: 0;
-}
 
-.popular-products-list .catalog-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -20px;
+  list-style: none;
 }
 
 .popular-brand-item:hover,
@@ -804,16 +801,12 @@ a {
 
 .catalog-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
+  margin-left: -20px;
   padding: 0;
 
   list-style: none;
-}
-
-.catalog-list .catalog-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -20px;
 }
 
 .catalog-item {
