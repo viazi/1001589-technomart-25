@@ -31,7 +31,7 @@
       </div>
 
       <div class="header-middle container">
-        <h1 class="index-page-title">Интернет-магазин строительных материалов <br>и инструментов для ремонта</h1>
+        <h1 class="index-page-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
         <p class="header-contacts">
           <span class="phone">
             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -115,10 +115,11 @@
         </ul>
       </section>
 
-      <div class="container">
-        <section class="popular-products">
-          <h2>Популярные товары:</h2>
-          <a class="button" href="#">Все популярные товары</a>
+        <section class="popular-products container">
+          <div class="title-and-link">
+            <h2>Популярные товары:</h2>
+            <a class="button" href="#">Все популярные товары</a>
+          </div>
           <ul class="popular-products-list">
             <li class="catalog-item">
               <h3>
@@ -169,7 +170,7 @@
               </p>
             </li>
             <li class="catalog-item">
-              <span class="new-product">New</span>
+              <span class="new-product"><span class="text">New</span></span>
               <h3>
                 <a href="#">Перфоратор BOSCH BFG 2000</a>
               </h3>
@@ -177,6 +178,7 @@
                 <a href="#"><img src="img/bosch-bfg-2.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000"></a>
               </p>
               <p class="catalog-item-price">
+                <span class="old-price"></span>
                 <span class="price">12500 Р.</span>
               </p>
               <p class="catalog-item-order">
@@ -186,11 +188,12 @@
             </li>
           </ul>
         </section>
-      </div>
 
-      <section class="popular-brands">
-        <h2>Популярные производители:</h2>
-        <a class="button" href="#">Все производители</a>
+      <section class="popular-brands container">
+        <div class="title-and-link">
+          <h2>Популярные производители:</h2>
+          <a class="button" href="#">Все производители</a>
+        </div>
         <ul class="popular-brands-list">
           <li class="popular-brand-item">
             <a href="#"><img src="img/bosch.png" width="126" height="37" alt="Логотип BOSCH"></a>
@@ -219,50 +222,52 @@
         </ul>
       </section>
 
-      <section class="services">
-        <h2>Сервисы</h2>
-        <p>
-          Хороший интернет-магазин отличается от плохого не только ценами!
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
+      <div class="services-wrapper">
+        <section class="services container">
+          <h2>Сервисы</h2>
+          <p>
+            Хороший интернет-магазин отличается от плохого не только ценами!
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
 
-        <div class="services-carousel">
-          <ul class="services-control">
-            <li class="services-control-item">
-              <button class="slide-btn slide-btn-current">Доставка</button>
-            </li>
-            <li class="services-control-item">
-              <button class="slide-btn">Гарантия</button>
-            </li>
-            <li class="services-control-item">
-              <button class="slide-btn">Кредит</button>
-            </li>
-          </ul>
-          <ul class="services-slides">
-            <li class="services-slides-item">
-              <h3>Доставка</h3>
-              <p>
-                Мы с удовольствием доставим ваш товар прямо	к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-              </p>
-            </li>
-            <li class="services-slides-item">
-              <h3>Гарантия</h3>
-              <p>
-                Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,
-                вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
-              </p>
-            </li>
-            <li class="services-slides-item">
-              <h3>Кредит</h3>
-              <p>
-                Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
-              </p>
-              <a class="button" href="#">Отправить заявку</a>
-            </li>
-          </ul>
-        </div>
-      </section>
+          <div class="services-columns">
+            <div class="services-carousel">
+              <ul class="services-control">
+                <li class="services-control-item">
+                  <button class="slide-btn slide-btn-current">Доставка</button>
+                </li>
+                <li class="services-control-item">
+                  <button class="slide-btn">Гарантия</button>
+                </li>
+                <li class="services-control-item">
+                  <button class="slide-btn">Кредит</button>
+                </li>
+              </ul>
+              <ul class="services-slides">
+                <li class="services-slides-item delivery-slide">
+                  <h3>Доставка</h3>
+                  <p>Мы с удовольствием доставим ваш товар прямо	<br>к вашему подъезду совершенно бесплатно!
+                  Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
+                </li>
+                <li class="services-slides-item guarantee-slide">
+                  <h3>Гарантия</h3>
+                  <p>
+                    Если купленный у нас товар поломается или заискрит, <br>а также в случае пожара, спровоцированного его возгаранием,
+                    вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br>Дом уж восстановите как-нибудь сами.
+                  </p>
+                </li>
+                <li class="services-slides-item credit-slide">
+                  <h3>Кредит</h3>
+                  <p>
+                    Залезть в долговую яму стало проще! <br>Кредитные консультанты придут вам на помощь.
+                  </p>
+                  <a class="button" href="#">Отправить заявку</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <div class="index-columns container">
         <section class="about">
@@ -279,7 +284,7 @@
 
         <section class="contacts">
           <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами, <br>заехав в наш офис:</p>
+          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           <a href="#"><img src="img/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a>
           <a class="button" href="#">Заблудились? Напишите нам!</a>
         </section>
@@ -299,7 +304,7 @@
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
           <p class="footer-contacts">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
           <ul class="sections">
@@ -313,7 +318,7 @@
       <div class="footer-bottom">
         <div class="container">
           <p class="footer-copyright">
-            © 2010–2019 Компания «Техномарт»<br>
+            © 2010–2019 Компания «Техномарт»
             Все права защищены
           </p>
           <ul class="footer-social">
@@ -333,8 +338,8 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img src="img/map-big.png" width="960" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      <button class="modal-close" type="button">Закрыть</button>
+      <img src="img/map-big.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
     <section class="modal modal-write-us">
@@ -348,13 +353,22 @@
           <label for="write-us-email">Ваш e-mail:</label>
           <input type="text" name="email" placeholder="email@example.com" id="write-us-email" required>
         </p>
-        <p>
+        <p class="textarea">
           <label for="write-us-text">Текст письма:</label>
           <textarea class="write-us-field" name="text" id="write-us-text" required>В свободной форме</textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       </form>
     </section>
+
+    <div class="modal modal-cart-notification">
+      <p class="modal-cart-info">Товар добавлен в корзину!</p>
+      <div class="modal-bottom">
+        <a class="button" href="#">Оформить заказ</a>
+        <button class="button button-continue" type="button">Продолжить покупки</button>
+      </div>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </div>
   </body>
 </html>
