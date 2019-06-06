@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&#124;PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -59,13 +59,13 @@
       </div>
     </header>
     <main>
-      <section class="promo">
+      <section class="promo container">
         <h2 class="visually-hidden">Категории товаров и услуг</h2>
         <ul class="categories">
           <li class="promo-item promo-materials">
             <h3>Материалы</h3>
             <a class="button button-promo" href="#">На любой вкус</a>
-            <span class="new-product">New</span>
+            <span class="new-product"><span class="text">New</span></span>
           </li>
           <li class="promo-item promo-tools">
             <h3>Инструмент</h3>
@@ -74,14 +74,6 @@
           <li class="promo-item promo-machinery">
             <h3>Техника</h3>
             <a class="button button-promo" href="#">Для стройки</a>
-          </li>
-          <li class="promo-item promo-sale">
-            <h3>Скидки 50%</h3>
-            <a class="button button-promo" href="#">На 350 товаров</a>
-          </li>
-          <li class="promo-item promo-delivery">
-            <h3>Доставка</h3>
-            <a class="button button-promo" href="#">Бесплатно</a>
           </li>
           <li>
             <div class="products-carousel">
@@ -100,17 +92,27 @@
                   <a class="button" href="catalog.html">Открыть каталог</a>
                 </li>
               </ul>
-              <ul class="slides-switches">
-                <li class="slide-radio">
-                  <button class="slide-control">1</button>
-                </li>
-                <li class="slide-radio slide-radio-active">
-                  <button class="slide-control">2</button>
-                </li>
-              </ul>
-              <button class="slide-btn-back">Предыдущий слайд</button>
-              <button class="slide-btn-next">Следующий слайд</button>
+              <div class="slides-switches">
+                <input type="radio" id="btn-1" name="toggle">
+                <label class="slide-radio-active" for="btn-1"><span class="visually-hidden">Слайд 1</span></label>
+                <input type="radio" id="btn-2" name="toggle">
+                <label for="btn-2"><span class="visually-hidden">Слайд 2</span></label>
+              </div>
+              <button class="slide-btn-back"><span class="visually-hidden">Предыдущий слайд</span></button>
+              <button class="slide-btn-next"><span class="visually-hidden">Следующий слайд</span></button>
             </div>
+          </li>
+          <li class="promo-right">
+            <ul>
+              <li class="promo-item promo-sale">
+                <h3>Скидки 50%</h3>
+                <a class="button button-promo" href="#">На 350 товаров</a>
+              </li>
+              <li class="promo-item promo-delivery">
+                <h3>Доставка</h3>
+                <a class="button button-promo" href="#">Бесплатно</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -357,9 +359,11 @@
           <label for="write-us-text">Текст письма:</label>
           <textarea class="write-us-field" name="text" id="write-us-text" required>В свободной форме</textarea>
         </p>
-        <button class="button" type="submit">Отправить</button>
         <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       </form>
+      <div class="modal-bottom">
+        <button class="button" type="submit">Отправить</button>
+      </div>
     </section>
 
     <div class="modal modal-cart-notification">
