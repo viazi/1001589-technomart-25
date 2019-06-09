@@ -1852,7 +1852,6 @@ input[type="radio"].visually-hidden {
 
 .sorting-heading {
   margin: 0;
-  margin-right: 142px;
   padding: 0;
 }
 
@@ -1868,16 +1867,12 @@ input[type="radio"].visually-hidden {
 .sorting-type {
   justify-content: flex-end;
   flex-wrap: wrap;
-  width: 355px;
+  width: 100%;
 }
 
 .sorting-type li {
-  width: 115px;
-  margin-left: 5px;
-}
-
-.sorting-type li:first-child {
-  margin-left: 0;
+  margin-left: 65px;
+  flex-shrink: 0;
 }
 
 .sorting {
@@ -1911,6 +1906,17 @@ input[type="radio"].visually-hidden {
   border-bottom: none;
 }
 
+.sorting-order {
+  width: 60px;
+  margin-left: 45px;
+}
+
+.sorting-order li {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
 .ascending-order,
 .descending-order {
   position: relative;
@@ -1919,7 +1925,7 @@ input[type="radio"].visually-hidden {
 .ascending-order::after {
   position: absolute;
   top: -2px;
-  left: 45px;
+  left: 5px;
 
   content: "";
 
@@ -1929,8 +1935,8 @@ input[type="radio"].visually-hidden {
 
 .descending-order::after {
   position: absolute;
-  top: 3px;
-  left: 75px;
+  top: 4px;
+  left: 23px;
 
   content: "";
 
