@@ -1158,6 +1158,7 @@ input[type="radio"].visually-hidden {
   justify-content: flex-end;
 
   margin: 40px 0;
+  margin-left: auto;
   padding: 0;
   width: 560px;
 
@@ -1238,7 +1239,7 @@ input[type="radio"].visually-hidden {
 
 .footer-copyright {
   margin: 0;
-  margin-right: 150px;
+  margin-right: 130px;
   padding: 0;
   width: 240px;
 }
@@ -1249,9 +1250,9 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   margin: 0;
   margin-left: -3px;
-  margin-right: 115px;
+  margin-right: 90px;
   padding: 0;
-  width: 135px;
+  width: 180px;
 
   text-align: center;
   list-style: none;
