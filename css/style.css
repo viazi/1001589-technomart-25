@@ -1115,6 +1115,7 @@ input[type="radio"].visually-hidden {
 
 .footer-top {
   display: flex;
+  justify-content: space-between;
 
   background-color: #32425c;
   font-size: 18px;
@@ -1135,7 +1136,6 @@ input[type="radio"].visually-hidden {
 
   width: 220px;
   height: 63px;
-  margin-right: 170px;
 
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
@@ -1159,13 +1159,13 @@ input[type="radio"].visually-hidden {
 
   margin: 40px 0;
   padding: 0;
-  width: 550px;
+  width: 560px;
 
   list-style: none;
 }
 
 .footer-navigation li {
-  margin-left: 59px;
+  margin-left: 60px;
 }
 
 .footer-navigation li:first-child {
@@ -1195,7 +1195,7 @@ input[type="radio"].visually-hidden {
   margin-top: -7px;
   margin-left: auto;
   padding: 0;
-  width: 525px;
+  width: 540px;
 
   list-style: none;
 }
