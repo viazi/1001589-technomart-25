@@ -1154,14 +1154,22 @@ input[type="radio"].visually-hidden {
 
 .footer-navigation {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 
   margin: 40px 0;
-  margin-left: auto;
   padding: 0;
   width: 550px;
 
   list-style: none;
+}
+
+.footer-navigation li {
+  margin-right: 59px;
+}
+
+.footer-navigation li:last-child {
+  margin-right: 0px;
 }
 
 .footer-navigation a {
@@ -1180,7 +1188,8 @@ input[type="radio"].visually-hidden {
 
 .sections {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 
   margin: 0;
   margin-top: -7px;
@@ -1189,6 +1198,14 @@ input[type="radio"].visually-hidden {
   width: 525px;
 
   list-style: none;
+}
+
+.sections li {
+  margin-right: 59px;
+}
+
+.sections li:last-child {
+  margin-right: 0px;
 }
 
 .sections a {
@@ -1229,8 +1246,9 @@ input[type="radio"].visually-hidden {
 .footer-social {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0;
+  margin-left: -3px;
   margin-right: 115px;
   padding: 0;
   width: 135px;
@@ -1243,6 +1261,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 3px;
+  margin-bottom: 3px;
   width: 42px;
   height: 42px;
   color: #ffffff;
@@ -1846,8 +1866,18 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-type {
+  justify-content: flex-end;
+  flex-wrap: wrap;
   width: 355px;
-  justify-content: space-between;
+}
+
+.sorting-type li {
+  width: 115px;
+  margin-right: 5px;
+}
+
+.sorting-type li:last-child {
+  margin-right: 0;
 }
 
 .sorting {
@@ -1928,6 +1958,8 @@ input[type="radio"].visually-hidden {
 .catalog-item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
   position: relative;
   width: 220px;
   margin-left: 20px;
