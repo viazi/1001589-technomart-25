@@ -1337,6 +1337,23 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
 }
 
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+  padding: 0;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
 .modal-close {
   position: absolute;
   top: 10px;
@@ -1356,8 +1373,10 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
 
   position: fixed;
-  top: 150px;
-  left: 30%;
+  top: 50%;
+  left: 50%;
+  margin-left: -310px;
+  margin-top: -215px;
 
   width: 620px;
 
@@ -1413,6 +1432,7 @@ input[type="radio"].visually-hidden {
 .write-us-form input {
   width: 220px;
   padding: 10px 0;
+  padding-left: 16px;
   margin-bottom: 15px;
 }
 
@@ -1420,11 +1440,11 @@ input[type="radio"].visually-hidden {
   width: 460px;
   min-height: 114px;
   margin-bottom: 22px;
+  padding-left: 16px;
 }
 
 .write-us-form input::-webkit-input-placeholder,
-.write-us-form textarea {
-  padding-left: 16px;
+.write-us-form textarea::-webkit-input-placeholder {
   padding-top: 10px;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -1515,6 +1535,57 @@ input[type="radio"].visually-hidden {
 
 .modal {
   display: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+
+  from,
+  to {
+    transform: translate(-50%, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-51%, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-49%, 0);
+  }
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 /*Страница каталога*/
