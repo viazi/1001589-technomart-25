@@ -168,14 +168,17 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.search::-webkit-input-placeholder,
-.search::-ms-input-placeholder {
+.search::-webkit-input-placeholder {
   color: #ffffff;
 }
 
 .search::-moz-placeholder {
   color: #ffffff;
   opacity: 1;
+}
+
+.search:-ms-input-placeholder {
+  color: #ffffff;
 }
 
 .search-button {
