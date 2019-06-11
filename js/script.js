@@ -9,6 +9,7 @@ var text = writeUsPopup.querySelector("[name=text]");
 writeUsLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   writeUsPopup.classList.add("modal-show");
+  name.focus();
 });
 
 close.addEventListener("click", function (evt) {
