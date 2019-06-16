@@ -2,14 +2,15 @@ var writeUsLink = document.querySelector(".write-us-link");
 var writeUsPopup = document.querySelector(".modal-write-us");
 var close = writeUsPopup.querySelector(".modal-close");
 var form = writeUsPopup.querySelector("form");
-var name = writeUsPopup.querySelector("[name=name]");
+var userName = writeUsPopup.querySelector("[name=name]");
 var email = writeUsPopup.querySelector("[name=email]");
 var text = writeUsPopup.querySelector("[name=text]");
+var formSubmit = writeUsPopup.querySelector(".button");
 
 writeUsLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   writeUsPopup.classList.add("modal-show");
-  name.focus();
+  userName.focus();
 });
 
 close.addEventListener("click", function (evt) {
@@ -18,11 +19,11 @@ close.addEventListener("click", function (evt) {
   writeUsPopup.classList.remove("modal-error");
 });
 
-form.addEventListener("submit", function (evt) {
-  if (!name.value || !email.value || !text.value) {
+formSubmit.addEventListener("click", function (evt) {
+  if (!userName.value || !email.value || !text.value) {
     evt.preventDefault();
     writeUsPopup.classList.remove("modal-error");
-    writeUsPopup.offsetWidth = popup.offsetWidth;
+    writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
     writeUsPopup.classList.add("modal-error");
   }
 });
