@@ -68,6 +68,9 @@ a {
 .main-header {
   margin-bottom: 58px;
   padding-bottom: 60px;
+  height: 320px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
   background-color: #f4f7f9;
 }
@@ -303,7 +306,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .index-page-title {
@@ -455,10 +458,10 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 300px;
+  min-height: 45px;
   margin: 0;
-  margin-bottom: 3px;
-  padding: 12px 10px 10px 45px;
+  margin-bottom: 5px;
+  padding: 12px 10px 8px 47px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -1103,6 +1106,9 @@ a {
 }
 
 .delivery-slide p {
+  position: relative;
+  z-index: 1;
+
   width: 275px;
 }
 
@@ -1119,6 +1125,9 @@ a {
 }
 
 .guarantee-slide p {
+  position: relative;
+  z-index: 1;
+
   width: 379px;
 }
 
@@ -1135,6 +1144,9 @@ a {
 }
 
 .credit-slide p {
+  position: relative;
+  z-index: 1;
+
   width: 279px;
 }
 
@@ -1558,6 +1570,7 @@ a {
   position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 1;
 
   display: -webkit-box;
 
@@ -2255,6 +2268,7 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  margin-right: 45px;
 }
 
 .sorting-type li {
@@ -2296,7 +2310,6 @@ a {
 
 .sorting-order {
   width: 60px;
-  margin-left: 45px;
 }
 
 .sorting-order li {
@@ -2309,6 +2322,8 @@ a {
 .ascending-order,
 .descending-order {
   position: relative;
+  top: 0;
+  left: 0;
 
   display: block;
   width: 18px;
