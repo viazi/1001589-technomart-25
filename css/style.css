@@ -307,6 +307,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 39px;
+  min-height: 75px;
 }
 
 .index-page-title {
